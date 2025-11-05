@@ -206,7 +206,8 @@ app = Flask(__name__, static_folder=str(DASHBOARD_DIR), static_url_path='')
 if os.getenv('RENDER'):
     CORS(app, origins=[
         'https://quant-enthusiasts-risk-engine.onrender.com',
-        'https://quant-enthusiasts-risk-engine.onrender.com/'
+        'https://riskengine.site',
+        'https://www.riskengine.site'
     ])
 else:
     CORS(app, origins=[
